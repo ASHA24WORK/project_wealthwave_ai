@@ -6,7 +6,7 @@ import SpendingChart from '../components/SpendingChart';
 import BudgetProgress from '../components/BudgetProgress';
 import RecentTransactions from '../components/RecentTransactions';
 import SavingsGoals from '../components/SavingsGoals';
-import { Coffee, ShoppingBag, Home, Car, Film, DollarSign, Package } from 'lucide-react';
+import { Coffee, ShoppingBag, Home, Car, Film, DollarSign, Package, Plane, Smartphone, ShieldCheck } from 'lucide-react';
 
 // Mock data for spending categories
 const spendingCategories = [
