@@ -6,51 +6,55 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#5e35b1',
-          light: '#7e57c2',
-          dark: '#4527a0',
+          DEFAULT: '#6d28d9',
+          light: '#7c3aed',
+          dark: '#5b21b6',
         },
         secondary: {
-          DEFAULT: '#2196f3',
-          light: '#64b5f6',
-          dark: '#1976d2',
+          DEFAULT: '#2563eb',
+          light: '#3b82f6',
+          dark: '#1d4ed8',
         },
-        success: {
-          DEFAULT: '#4caf50',
-          light: '#81c784',
-          dark: '#388e3c',
+        accent: {
+          DEFAULT: '#db2777',
+          light: '#ec4899',
+          dark: '#be185d',
         },
-        warning: {
-          DEFAULT: '#ff9800',
-          light: '#ffb74d',
-          dark: '#f57c00',
-        },
-        error: {
-          DEFAULT: '#f44336',
-          light: '#e57373',
-          dark: '#d32f2f',
-        },
-        gray: {
-          50: '#f8f9fa',
-          100: '#f1f3f5',
-          200: '#e9ecef',
-          300: '#dee2e6',
-          400: '#ced4da',
-          500: '#adb5bd',
-          600: '#6c757d',
-          700: '#495057',
-          800: '#343a40',
-          900: '#212529',
-        },
-      },
-      fontFamily: {
-        sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
-      },
-      boxShadow: {
-        card: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
       },
       animation: {
-        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'float': 'float 3s ease-in-out infinite',
+        'pulse-glow': 'pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'slide-up': 'slide-up 0.5s ease-out',
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+        'pulse-glow': {
+          '0%, 100%': {
+            opacity: '1',
+            transform: 'scale(1)',
+          },
+          '50%': {
+            opacity: '.8',
+            transform: 'scale(1.05)',
+          },
+        },
+        'slide-up': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(20px)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)',
+          },
+        },
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
   },
